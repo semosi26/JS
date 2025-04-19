@@ -77,3 +77,11 @@ console.log(mynewarray)
 
 //splice
 // splice elimina elementos de un array
+/*
+En el método .splice(indice, cantidad), los parámetros significan:
+
+indice: la posición donde empieza a modificar el array.
+
+cantidad: cuántos elementos quieres eliminar a partir de ese índice.
+
+*/
