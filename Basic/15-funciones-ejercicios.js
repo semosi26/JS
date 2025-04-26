@@ -55,6 +55,64 @@ console.log(arrayMayuscula(palabra2))
 
 
 // 5. crea una funcion que reciba un numero y devuelva true si es primo, y false en caso constrario
+function numeroPrimo(numero) {
+    if (numero <= 1) {
+      console.log('El número no es primo');
+      return;
+    }
+    
+    for (let i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        console.log(`${numero} no es un número primo`);
+        return;
+      }
+    }
+    
+    console.log(`${numero} es un número primo`);
+  }
+  
+    numeroPrimo(7)
+
+    
+
 // 6. crea una funcion que reciba dos arrays y devuelva un nuevo un nuevo array que contenga los elementos comunes entre ambos
+function elementosComunes(arr1, arr2) {
+    return arr1.filter(elemento => arr2.includes(elemento));
+  }
+  
+  // Prueba con tus arrays:
+  let array1 = [1, 2, 3, 4, 5, 'marcela'];
+  let array2 = ['sebastian', 5, 6, 'marcela', 8, 9];
+  
+  let comunes = elementosComunes(array1, array2);
+  console.log(comunes); 
+  
 // 7. crea una funcion que reciba un array de numeros y devuelva la suma de todos los numeros pares
+
+let arrayNumeros = [1,2,3,4,5,6,7,8]
+
+function sumaPares (arrayNumeros) {
+    let pares = 0
+    for (let i=0 ;i < arrayNumeros.length ; i++ ){
+        if ( arrayNumeros[i] % 2 == 0){
+            pares += arrayNumeros[i]
+        } 
+}
+return pares
+}
+
+console.log(sumaPares(arrayNumeros))
+
+
+
 // 8. crea una funcion que reciba un array de numeros y devuelva un nuevo array con cada numero elevado al cuadrado
+let arrayNumeros2 = [1,2,3,4,5,6,7,8]
+function sumaPotencia (arrayNumeros2) {
+    let potencia = []
+    for (let i=0 ;i < arrayNumeros2.length ; i++ ){
+        potencia.push(arrayNumeros2[i]**2)
+    }
+return potencia
+}
+
+console.log(sumaPotencia(arrayNumeros2))
